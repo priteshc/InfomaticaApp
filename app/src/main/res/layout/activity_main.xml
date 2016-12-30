@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+
+    >
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           >
+
+        <com.github.jorgecastillo.FillableLoader
+            android:id="@+id/fillableLoader"
+            app:fl_originalWidth="1000"
+            app:fl_originalHeight="800"
+            app:fl_strokeColor="@color/Logo"
+            app:fl_fillColor="@color/Logo"
+            app:fl_strokeWidth="@dimen/stroke"
+            app:fl_strokeDrawingDuration="4500"
+            app:fl_fillDuration="4000"
+            app:fl_clippingTransform="spikes"
+            app:fl_fillPercentage="100"
+             android:layout_gravity="center"
+           android:layout_centerInParent="true"
+            style="@style/logo"
+            />
+
+
+           <com.hanks.htextview.HTextView
+               android:id="@+id/text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/Logo"
+               android:textSize="40sp"
+               app:animateType="anvil"
+               android:layout_alignBottom="@+id/fillableLoader"
+
+               />
+
+       </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
